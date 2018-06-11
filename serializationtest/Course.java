@@ -29,13 +29,14 @@ public class Course implements Serializable{
         this.score = score;
     }
 
+    //out.writeXX或者in.readXX是按照类似队列方式先进先出，写入或读入值
     private void writeObject(ObjectOutputStream out) throws IOException{
-        out.defaultWriteObject();
+        out.defaultWriteObject();//告知JVM按照默认规则写入对象
         out.writeInt(80);
     }
 
     private void readObject(ObjectInputStream in) throws Exception{
-        in.defaultReadObject();
+        in.defaultReadObject();//告知JVM按照默认规则读入对象
         this.score=in.readInt();
     }
 
