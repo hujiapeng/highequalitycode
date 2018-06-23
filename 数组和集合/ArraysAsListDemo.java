@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Vector;
 
 public class ArraysAsListDemo {
 
@@ -21,10 +22,11 @@ public class ArraysAsListDemo {
 
         System.out.println(Arrays.asList(studentArr).size());
         List studentList=Arrays.asList(studentArr);
-        
+
         //下面add方法会抛出UnsupportedOperationException异常，因为Arrays.asList返回的ArrayList是Arrays内部类，没有add方法，
         //此异常是其父类add方法抛出的；我们平常用的ArrayList类是java.util.ArrayList
         studentList.add(new Student("小亮",21));
+
     }
 
 }
