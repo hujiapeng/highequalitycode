@@ -86,5 +86,5 @@
         };
         public abstract Car create();
     }
-</pre></p>Car是接口，FoldCar和BuickCar是其实现类。
+</pre></p>Car是接口，FoldCar和BuickCar是其实现类。<br/>
 5. 枚举项数不超过64：EnumSet.allOf(Season.class)将枚举转为EnumSet，如果Season枚举成员数小于等于64，则使用RegularEnumSet，如果大于则使用JumboEnumSet，JumboEnumSet会根据枚举成员数量，先按照64个一组进行拆分，然后每个组再映射到一个long类型数字的每个位上。所以枚举成员数量不超过64时，性能极佳
