@@ -1,4 +1,4 @@
-package hqcode.枚举和注解;
+package hqcode.枚举和注解.枚举;
 
 public enum Role {
     Admin("管理员", new LifeTime(), new Scope()), User("普通用户", new LifeTime(), new Scope());
