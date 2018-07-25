@@ -29,7 +29,7 @@
     strVec.add("AAA");
     System.out.println(strList.equals(strVec));//输出true
     </pre>
-ArrayList和Vector都实现List接口，并继承AbstractList抽象类，其equals方法是AbstractList中的，其实现就是先判断是否实现List，然后迭代器遍历其中元素分别比较（迭代过程顺序不同导致比较的值不同也返回false）
+ArrayList和Vector都实现List接口，并继承AbstractList抽象类，其equals方法是AbstractList中的，其实现就是先判断是否实现List，然后迭代器遍历其中元素分别比较（迭代过程顺序不同导致比较的值不同也返回false）<br/>
 10. 子列表只是原列表的一个视图：使用list.subList获取的是基于原list的SubList类对象，通过源码可知该子列表是通过改变原列表索引得到的新视图数据，所以对子列表的处理也会影响原列表
     <pre>
     List<String> strList=new ArrayList<>();
